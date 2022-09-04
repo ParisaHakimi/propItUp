@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SaleItem = ({ name, age, hairColor }) => {
+const SaleItem = ({ name, initialAge, hairColor }) => {
+  // let newage= parsInt(initialAge);
+  const [age, setAge] = useState(parseInt(initialAge));
   return (
     <>
-     <div className="container">
-     <h1> {name}</h1>
-      <h3>{age}</h3>
-      <h4>{hairColor}</h4>
-     </div>
+      <div className="container">
+        <h2>{name}</h2>
+        <h3>Age: {age}</h3>
+        <h4>Hair color: {hairColor}</h4>
+        <button
+          onClick={(e) => {
+            setAge(age + 1);
+          }}
+        >
+          Brthday Button for {name}
+        </button>
+      </div>
     </>
   );
 };

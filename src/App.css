@@ -1,15 +1,15 @@
 .App {
   border: 1px solid #000;
-  margin: 50px auto;
+  margin: 10px auto;
   width: 40%;
-  padding: 40px;
-
+  padding: 5px;
 }
-.container:nth-child(odd){
+.container {
+  padding: 10px;
+}
+.container:nth-child(odd) {
   background-color: #ccc;
-
 }
-.container:nth-child(even){
+.container:nth-child(even) {
   background-color: rgb(254, 214, 139);
-
 }
