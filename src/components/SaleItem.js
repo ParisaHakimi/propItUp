@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const SaleItem = ({ name, initialAge, hairColor }) => {
+const SaleItem = ({ namee, initialAge, hairColor }) => {
   // let newage= parsInt(initialAge);
   const [age, setAge] = useState(parseInt(initialAge));
   return (
     <>
       <div className="container">
-        <h2>{name}</h2>
+        <h2>{namee}</h2>
         <h3>Age: {age}</h3>
         <h4>Hair color: {hairColor}</h4>
         <button
@@ -14,7 +14,7 @@ const SaleItem = ({ name, initialAge, hairColor }) => {
             setAge(age + 1);
           }}
         >
-          Brthday Button for {name}
+          Brthday Button for {namee}
         </button>
       </div>
     </>
